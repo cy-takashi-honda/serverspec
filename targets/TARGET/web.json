@@ -1,0 +1,7 @@
+{
+    "common": {
+        "iptable": {
+            "enable_ports":[22, 80]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+	"aws": {
+		"awscli": {
+			"aws_access_key_id": "AWS_ACCESS_KEY",
+			"aws_secret_access_key":"AWS_ACCESS_KEY_SECRET",
+			"region": "AWS_REGION"
+		}
+	},
+	"common": {
+		"iptable": {
+			"enable_ports":[22, 80]
+		}
+	},
+	"php": {
+		"default": {
+			"php_ver":"5.4"
+		},
+		"module": {
+			"php_modules":["json","pdo","pdo_mysql","xmlreader","xmlwriter","zip"]
+		}
+	},
+	"httpd": {
+		"default": {
+			"hoge": "fuga"
+		}
+	},
+	"python": {
+		"default": {}
+	}
+}

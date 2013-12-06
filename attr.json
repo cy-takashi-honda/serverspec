@@ -1,0 +1,27 @@
+{
+	"TARGET": {
+		"config": {
+			"default": {
+				"user":"USER",
+				"IdentityFile":"IDENTITY_FILE_PATH",
+				"sudo_password": "SUDO_PASSWORD"
+			},
+			"localhost": {
+				"user":"LOCALHOST_USER",
+				"IdentityFile":"LOCALHOST_IDENTITY_FILE_PATH",
+				"sudo_password": "LOCALHOST_USER_SUDO_PASSWORD"
+			}
+		},
+		"aws_conf": "AWS_CREDENTIAL_FILE_PATH",
+		"end_points": {
+			"ec2": "EC2_ENDPOINT",
+			"rds": "RDS_ENDPOINT"
+		},
+		"roles": {
+			"chef": ["httpd","common", "common/iptable", "php", "php/module", "python", "aws/awscli"],
+			"web": ["common/iptable", "httpd/server"],
+			"database": ["mysql/server"],
+			"jenkins": ["jenkins"]
+		}
+	}
+}
